@@ -1,1 +1,27 @@
+{
+  "$id": "https://willstransfer.com/schema/industry.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Industry",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Short ID, e.g. FOOD-BEV, PULP, PHARMA"
+    },
+    "name": {
+      "type": "string",
+      "description": "Full industry name"
+    },
+    "description": {
+      "type": "string"
+    },
+    "exampleProducts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": ["id", "name"]
+}
 
