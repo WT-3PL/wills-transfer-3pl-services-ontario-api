@@ -1,0 +1,65 @@
+[
+  {
+    "id": "LANE-GTA-TO-EASTERN-ON",
+    "name": "GTA to Eastern Ontario Warehouses",
+    "mode": "LTL",
+    "originRegion": "GTA",
+    "originPostalPrefix": ["L", "M"],
+    "destinationRegion": "Eastern Ontario",
+    "destinationFacilities": [
+      "BROCKVILLE-PARKEDALE",
+      "BROCKVILLE-CENTRAL",
+      "OTTAWA-EAST",
+      "OTTAWA-WEST",
+      "PERTH-01",
+      "SMITHS-01",
+      "INGLESIDE-01"
+    ],
+    "primaryCarriers": ["CARRIER-LTL-ONTARIO"],
+    "typicalWeightKg": {
+      "min": 500,
+      "max": 12000
+    },
+    "serviceLevels": ["Standard", "Expedited"],
+    "notes": "Core inbound LTL lane feeding Wills warehouses from GTA manufacturers and importers."
+  },
+  {
+    "id": "LANE-MONTREAL-TO-EASTERN-ON",
+    "name": "Montreal to Eastern Ontario Warehouses",
+    "mode": "TL",
+    "originRegion": "Montreal",
+    "originPostalPrefix": ["H"],
+    "destinationRegion": "Eastern Ontario",
+    "destinationFacilities": [
+      "BROCKVILLE-PARKEDALE",
+      "SMITHS-01",
+      "INGLESIDE-01"
+    ],
+    "primaryCarriers": ["CARRIER-TL-NATIONAL"],
+    "typicalWeightKg": {
+      "min": 10000,
+      "max": 25000
+    },
+    "serviceLevels": ["Standard"],
+    "notes": "Common inbound TL lane for palletized freight heading into Brockville/Smiths/ING."
+  },
+  {
+    "id": "LANE-RAIL-PULP-TO-BROCKVILLE-SMITHS",
+    "name": "Rail Pulp to Brockville & Smiths Falls",
+    "mode": "Rail+Truck",
+    "originRegion": "US South / Pulp Mills",
+    "originPostalPrefix": [],
+    "destinationRegion": "Eastern Ontario",
+    "destinationFacilities": [
+      "BROCKVILLE-PARKEDALE",
+      "SMITHS-01"
+    ],
+    "primaryCarriers": ["CARRIER-RAIL-CPKC"],
+    "typicalWeightKg": {
+      "min": 25000,
+      "max": 90000
+    },
+    "serviceLevels": ["Standard"],
+    "notes": "Railcar inbound via CPKC with truck dray to Brockville DC and Smiths Falls warehouse."
+  }
+]
