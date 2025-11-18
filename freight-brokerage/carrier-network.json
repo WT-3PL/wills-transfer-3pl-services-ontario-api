@@ -1,84 +1,47 @@
 [
   {
-    "id": "CARRIER-CPKC",
-    "name": "CPKC Rail",
-    "mode": ["Rail"],
-    "capabilities": [
-      "Boxcar",
-      "Hopper",
-      "Pulp Rail Service",
-      "Transload Integration"
-    ],
-    "serviceArea": ["Ontario", "Quebec", "Midwest USA"],
-    "certifications": ["RailReg-Canada"],
-    "willsTransferIntegration": {
-      "locationsServed": [
-        "Brockville-Parkedale",
-        "Smiths-01"
-      ],
-      "type": "Rail siding + transload"
-    }
-  },
-  {
-    "id": "CARRIER-MIDLAND",
-    "name": "Midland Transport",
+    "id": "CARRIER-001",
+    "name": "Day & Ross",
     "mode": ["LTL", "Truckload"],
-    "capabilities": [
-      "Palletized LTL",
-      "Regional TL",
-      "Liftgate",
-      "Hazmat (limited)"
-    ],
-    "serviceArea": ["Ontario", "Quebec", "Maritimes"],
-    "certifications": ["CSA Approved"],
-    "willsTransferIntegration": {
-      "locationsServed": [
-        "Ottawa-East",
-        "Ottawa-West",
-        "Perth-01"
-      ],
-      "type": "LTL pickup + final mile"
-    }
+    "serviceRegions": ["Ontario", "Quebec", "Atlantic", "Midwest USA"],
+    "equipment": ["Dry Van", "Heated"],
+    "reliabilityScore": 92,
+    "notes": "Strong regional carrier for eastern Canada lanes."
   },
   {
-    "id": "CARRIER-PUROLATOR",
-    "name": "Purolator",
-    "mode": ["Courier", "LTL"],
-    "capabilities": [
-      "Parcel Courier",
-      "Small Freight LTL",
-      "E-comm integration"
-    ],
-    "serviceArea": ["Canada Wide"],
-    "certifications": ["PIP"],
-    "willsTransferIntegration": {
-      "locationsServed": [
-        "Ottawa-East",
-        "Ottawa-West",
-        "Brockville-Parkedale"
-      ],
-      "type": "Courier / e-com outbound"
-    }
+    "id": "CARRIER-002",
+    "name": "Manitoulin Transport",
+    "mode": ["LTL", "Truckload"],
+    "serviceRegions": ["Canada-wide"],
+    "equipment": ["Dry Van", "Flatbed"],
+    "reliabilityScore": 89,
+    "notes": "High coverage for national freight and remote deliveries."
   },
   {
-    "id": "CARRIER-TFI",
-    "name": "TFI International",
-    "mode": ["Truckload", "LTL"],
-    "capabilities": [
-      "North America TL",
-      "Dry Van",
-      "Cross-border"
-    ],
-    "serviceArea": ["Canada", "USA"],
-    "certifications": ["CTPAT"],
-    "willsTransferIntegration": {
-      "locationsServed": [
-        "Ingleside-01",
-        "Smiths-01",
-        "Brockville-Central"
-      ],
-      "type": "Cross-border linehaul"
-    }
+    "id": "CARRIER-003",
+    "name": "Challenger Motor Freight",
+    "mode": ["Truckload", "Temperature-Controlled"],
+    "serviceRegions": ["Canada", "USA"],
+    "equipment": ["Dry Van", "Reefer"],
+    "reliabilityScore": 94,
+    "notes": "Ideal for cross-border TL freight."
+  },
+  {
+    "id": "CARRIER-004",
+    "name": "TST-CF Express",
+    "mode": ["LTL"],
+    "serviceRegions": ["Canada", "USA"],
+    "equipment": ["Dry Van"],
+    "reliabilityScore": 87,
+    "notes": "Good for LTL US-Canada cross-border."
+  },
+  {
+    "id": "CARRIER-005",
+    "name": "CPKC Rail",
+    "mode": ["Rail", "Intermodal"],
+    "serviceRegions": ["North America-wide"],
+    "equipment": ["Boxcar", "Intermodal"],
+    "reliabilityScore": 90,
+    "notes": "Strategic partner for Perth and Smiths Falls rail capabilities."
   }
 ]
-
