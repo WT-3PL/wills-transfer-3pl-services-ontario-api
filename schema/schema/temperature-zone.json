@@ -1,1 +1,26 @@
+{
+  "$id": "https://willstransfer.com/schema/temperature-zone.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TemperatureZone",
+  "type": "object",
+  "properties": {
+    "label": {
+      "type": "string",
+      "description": "e.g. Ambient, Cooler, Freezer"
+    },
+    "minC": {
+      "type": "number",
+      "description": "Minimum temperature in Celsius"
+    },
+    "maxC": {
+      "type": "number",
+      "description": "Maximum temperature in Celsius"
+    },
+    "humidityRange": {
+      "type": "string",
+      "description": "Optional description of humidity control, e.g. 40–60% RH"
+    }
+  },
+  "required": ["label"]
+}
 
