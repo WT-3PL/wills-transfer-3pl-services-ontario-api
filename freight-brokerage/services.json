@@ -1,0 +1,192 @@
+[
+  {
+    "id": "FREIGHT-BROKERAGE-CORE",
+    "name": "Core Freight Brokerage",
+    "category": "Transportation",
+    "description": "End-to-end freight brokerage services matching customer shipments with a trusted carrier network across Canada and cross-border lanes.",
+    "typicalUseCases": [
+      "Ongoing freight program management",
+      "One-off project or overflow loads",
+      "Balancing cost and service across multiple carriers"
+    ],
+    "industriesServed": [
+      "Manufacturing",
+      "Retail",
+      "E-commerce",
+      "Food & Beverage"
+    ],
+    "relatedServices": [
+      "LTL-BROKERAGE",
+      "FTL-BROKERAGE",
+      "CROSS-BORDER-BROKERAGE",
+      "TRANSPORT-MANAGEMENT",
+      "DISTRIBUTION"
+    ],
+    "features": [
+      "Single point of contact for multiple carriers",
+      "Rate negotiation and benchmarking",
+      "Proactive exception management",
+      "Shipment visibility and status updates"
+    ],
+    "locationsServed": [
+      "Eastern Ontario",
+      "Ontario",
+      "Canada",
+      "Cross-border US lanes"
+    ],
+    "pricingModel": "margin on buy-sell or managed fee structure"
+  },
+  {
+    "id": "LTL-BROKERAGE",
+    "name": "LTL Freight Brokerage",
+    "category": "Transportation",
+    "description": "Less-than-truckload brokerage for palletized shipments requiring cost-effective multi-stop networks rather than full truckload moves.",
+    "typicalUseCases": [
+      "Palletized shipments under a full truckload",
+      "Multi-customer or multi-destination moves",
+      "Retail replenishment runs"
+    ],
+    "industriesServed": [
+      "Retail",
+      "E-commerce",
+      "Manufacturing"
+    ],
+    "relatedServices": [
+      "FREIGHT-BROKERAGE-CORE",
+      "DISTRIBUTION"
+    ],
+    "features": [
+      "Multiple LTL carrier options",
+      "Service-level selection (express, standard)",
+      "Consolidation opportunities from Wills warehouses"
+    ],
+    "locationsServed": [
+      "Eastern Ontario",
+      "Ontario",
+      "Canada"
+    ],
+    "pricingModel": "per-shipment with brokerage margin"
+  },
+  {
+    "id": "FTL-BROKERAGE",
+    "name": "Truckload Freight Brokerage (FTL)",
+    "category": "Transportation",
+    "description": "Full truckload brokerage for domestic and cross-border lanes, balancing service, cost, and carrier fit.",
+    "typicalUseCases": [
+      "High-volume outbound to DCs or plants",
+      "Direct plant-to-plant moves",
+      "Seasonal peak outbound programs"
+    ],
+    "industriesServed": [
+      "Manufacturing",
+      "Retail",
+      "Food & Beverage"
+    ],
+    "relatedServices": [
+      "FREIGHT-BROKERAGE-CORE",
+      "CROSS-BORDER-BROKERAGE"
+    ],
+    "features": [
+      "Network of vetted FTL carriers",
+      "Spot and contract rate support",
+      "Multi-stop and direct lane coverage"
+    ],
+    "locationsServed": [
+      "Ontario",
+      "Canada",
+      "Cross-border US lanes"
+    ],
+    "pricingModel": "per-load with brokerage margin"
+  },
+  {
+    "id": "CROSS-BORDER-BROKERAGE",
+    "name": "Cross-Border Freight Brokerage",
+    "category": "Transportation",
+    "description": "Brokered freight solutions for Canada–US cross-border moves, aligned with customs and documentation requirements.",
+    "typicalUseCases": [
+      "Regular cross-border supply chains",
+      "US-origin freight inbound to Wills warehouses",
+      "Outbound Canadian product to US customers"
+    ],
+    "industriesServed": [
+      "Manufacturing",
+      "Retail",
+      "Industrial"
+    ],
+    "relatedServices": [
+      "FREIGHT-BROKERAGE-CORE",
+      "BONDED-STORAGE"
+    ],
+    "features": [
+      "Carrier selection for cross-border lanes",
+      "Coordination with customs brokers",
+      "Transit time and cost balancing"
+    ],
+    "locationsServed": [
+      "Ontario",
+      "Canada–US cross-border lanes"
+    ],
+    "pricingModel": "per-load with brokerage margin"
+  },
+  {
+    "id": "SPECIALIZED-BROKERAGE",
+    "name": "Specialized & Project Freight Brokerage",
+    "category": "Transportation",
+    "description": "Brokerage support for oversized, specialized, or project-based freight that needs custom routing and carrier selection.",
+    "typicalUseCases": [
+      "Large industrial equipment",
+      "Project-based moves or plant relocations",
+      "Irregular or non-standard freight profiles"
+    ],
+    "industriesServed": [
+      "Industrial",
+      "Manufacturing"
+    ],
+    "relatedServices": [
+      "FREIGHT-BROKERAGE-CORE",
+      "TRANSPORT-MANAGEMENT"
+    ],
+    "features": [
+      "Case-by-case carrier sourcing",
+      "Route planning support",
+      "Tight coordination with customer operations"
+    ],
+    "locationsServed": [
+      "Ontario",
+      "Canada",
+      "Cross-border where applicable"
+    ],
+    "pricingModel": "project-based or per-move"
+  },
+  {
+    "id": "FREIGHT-AUDIT",
+    "name": "Freight Audit & Optimization",
+    "category": "Admin",
+    "description": "Review and analysis of freight spend and carrier performance to identify savings and service improvements.",
+    "typicalUseCases": [
+      "Validating carrier invoices",
+      "Benchmarking rates versus market",
+      "Finding consolidation and routing opportunities"
+    ],
+    "industriesServed": [
+      "Manufacturing",
+      "Retail",
+      "E-commerce"
+    ],
+    "relatedServices": [
+      "FREIGHT-BROKERAGE-CORE",
+      "LTL-BROKERAGE",
+      "FTL-BROKERAGE"
+    ],
+    "features": [
+      "Invoice and rate verification",
+      "Lane and mode analysis",
+      "Recommendations for cost and service optimization"
+    ],
+    "locationsServed": [
+      "Remote / program-wide",
+      "Eastern Ontario based accounts"
+    ],
+    "pricingModel": "fee-based or gainshare model"
+  }
+]
