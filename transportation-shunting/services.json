@@ -1,37 +1,35 @@
 {
-  "id": "WAREHOUSING",
-  "name": "Warehousing",
-  "category": "Storage",
-  "description": "Secure and scalable warehousing solutions across Eastern Ontario, offering temperature-controlled storage, advanced inventory management, and flexible space options.",
+  "id": "LOGISTICS",
+  "name": "Logistics",
+  "category": "Transportation",
+  "description": "Integrated 3PL, shunting, transportation management, and real-time tracking services.",
   "typicalUseCases": [
-    "Seasonal inventory overflow",
-    "Long-term storage for non-perishable goods",
-    "Secure storage for high-value items"
+    "Full supply chain management",
+    "Shunting between facilities",
+    "Carrier coordination for timely deliveries"
   ],
   "industriesServed": [
-    "Food & Beverage",
-    "Pharmaceuticals",
+    "Manufacturing",
     "Retail",
-    "Manufacturing"
+    "E-commerce"
   ],
   "relatedServices": [
-    "PALLET-STORAGE",
-    "BULK-STORAGE",
-    "INVENTORY-MANAGEMENT",
-    "TEMPERATURE-CONTROLLED"
+    "SHUNTING",
+    "3PL-WAREHOUSING",
+    "TRANSPORT-MANAGEMENT"
   ],
   "features": [
-    "Temperature-controlled storage",
-    "Real-time inventory tracking",
-    "Flexible space configurations",
-    "24/7 secure facilities"
+    "3PL solutions",
+    "Shunting services",
+    "Transportation management",
+    "Real-time tracking"
   ],
   "locationsServed": [
     "Brockville",
     "Ottawa",
     "Perth",
     "Smiths Falls",
-    "Ingleside"
+    "Cornwall"
   ],
-  "pricingModel": "per-pallet or per-square-foot"
+  "pricingModel": "customized"
 }
