@@ -1,0 +1,275 @@
+{
+  "$id": "https://www.willstransfer.com/schema/shipper-onboarding.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ShipperOnboarding",
+  "description": "Structured information captured when onboarding a new shipper or logistics customer.",
+  "type": "object",
+  "properties": {
+    "onboardingId": {
+      "type": "string",
+      "description": "Internal ID or reference for this onboarding record."
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when this onboarding record was created."
+    },
+    "company": {
+      "type": "object",
+      "description": "Core company identity for the shipper.",
+      "properties": {
+        "legalName": {
+          "type": "string"
+        },
+        "tradeName": {
+          "type": "string",
+          "description": "Operating or brand name, if different from legal name."
+        },
+        "website": {
+          "type": "string",
+          "format": "uri"
+        },
+        "businessType": {
+          "type": "string",
+          "description": "High-level business type.",
+          "enum": [
+            "Manufacturer",
+            "Distributor",
+            "Retailer",
+            "Wholesaler",
+            "3PL",
+            "Importer",
+            "Exporter",
+            "Other"
+          ]
+        },
+        "industryId": {
+          "type": "string",
+          "description": "Industry identifier (ID from industry.json)."
+        }
+      },
+      "required": ["legalName"]
+    },
+    "primaryContact": {
+      "type": "object",
+      "description": "Main day-to-day contact for operations.",
+      "properties": {
+        "name": { "type": "string" },
+        "roleTitle": { "type": "string" },
+        "email": {
+          "type": "string",
+          "format": "email"
+        },
+        "phone": { "type": "string" },
+        "preferredContactMethod": {
+          "type": "string",
+          "enum": ["Email", "Phone", "Teams", "Other"]
+        }
+      },
+      "required": ["name", "email"]
+    },
+    "billingContact": {
+      "type": "object",
+      "description": "Accounts payable / billing contact, if different.",
+      "properties": {
+        "name": { "type": "string" },
+        "email": {
+          "type": "string",
+          "format": "email"
+        },
+        "phone": { "type": "string" }
+      }
+    },
+    "locations": {
+      "type": "array",
+      "description": "Shipping origins/destinations relevant to this shipper.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "locationName": { "type": "string" },
+          "address": { "type": "string" },
+          "city": { "type": "string" },
+          "provinceState": { "type": "string" },
+          "country": { "type": "string" },
+          "postalCode": { "type": "string" },
+          "locationType": {
+            "type": "string",
+            "description": "Role of this location.",
+            "enum": ["Origin", "Destination", "Both", "Warehouse", "Plant", "Store"]
+          },
+          "dockType": {
+            "type": "string",
+            "description": "Loading dock characteristics.",
+            "enum": ["Grade", "Dock-level", "Both", "Unknown"]
+          },
+          "hoursOfOperation": {
+            "type": "string",
+            "description": "Typical shipping/receiving hours."
+          }
+        },
+        "required": ["locationName", "city", "country"]
+      }
+    },
+    "volumeProfile": {
+      "type": "object",
+      "description": "Volume and shipment profile for this shipper.",
+      "properties": {
+        "typicalShipmentsPerWeek": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "averagePalletsPerShipment": {
+          "type": "number",
+          "minimum": 0
+        },
+        "averageWeightPerShipmentKg": {
+          "type": "number",
+          "minimum": 0
+        },
+        "modesUsed": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["FTL", "LTL", "Intermodal", "Rail", "Ocean", "Air", "Courier"]
+          }
+        },
+        "seasonality": {
+          "type": "string",
+          "description": "Notes on seasonal peaks (e.g., Q4 spike, summer slow-down)."
+        }
+      }
+    },
+    "serviceNeeds": {
+      "type": "object",
+      "description": "What this shipper is looking for from Wills.",
+      "properties": {
+        "requiredServices": {
+          "type": "array",
+          "description": "IDs from service.json (e.g., PALLET-STORAGE, BROKERAGE-FTL).",
+          "items": {
+            "type": "string"
+          }
+        },
+        "requiresWarehousing": {
+          "type": "boolean"
+        },
+        "requiresFreightBrokerage": {
+          "type": "boolean"
+        },
+        "requiresFulfillment": {
+          "type": "boolean"
+        },
+        "specialRequirements": {
+          "type": "array",
+          "description": "Operational or compliance requirements.",
+          "items": {
+            "type": "string",
+            "enum": [
+              "Temperature-Controlled",
+              "Food-Grade",
+              "SQF",
+              "GMP",
+              "Bonded",
+              "Hazmat",
+              "High-Value",
+              "Government-Sensitive",
+              "Other"
+            ]
+          }
+        },
+        "targetStartDate": {
+          "type": "string",
+          "format": "date",
+          "description": "Intended go-live date for services."
+        },
+        "decisionStage": {
+          "type": "string",
+          "description": "Sales funnel stage.",
+          "enum": ["Discovery", "RFQ/RFP", "Proposal Sent", "Negotiation", "Awarded", "On Hold", "Lost"]
+        }
+      }
+    },
+    "lanesOfInterest": {
+      "type": "array",
+      "description": "Key lanes this shipper needs support on (IDs from your lanes file).",
+      "items": {
+        "type": "object",
+        "properties": {
+          "laneId": {
+            "type": "string",
+            "description": "Reference to a lane defined in freight-brokerage/lanes.json."
+          },
+          "priority": {
+            "type": "string",
+            "enum": ["Core", "Secondary", "Opportunistic"]
+          }
+        }
+      }
+    },
+    "itIntegration": {
+      "type": "object",
+      "description": "Systems and integration preferences.",
+      "properties": {
+        "usesEDI": { "type": "boolean" },
+        "usesAPI": { "type": "boolean" },
+        "erpSystem": {
+          "type": "string",
+          "description": "Name of ERP (e.g., SAP, Oracle, MS Dynamics)."
+        },
+        "wmsSystem": {
+          "type": "string",
+          "description": "Name of WMS, if applicable."
+        },
+        "preferredIntegrationMethod": {
+          "type": "string",
+          "enum": ["CSV/Flat File", "Portal Only", "EDI", "API", "Email", "Other"]
+        }
+      }
+    },
+    "complianceAndRisk": {
+      "type": "object",
+      "description": "Compliance and risk posture for this shipper.",
+      "properties": {
+        "certificationsHeld": {
+          "type": "array",
+          "description": "Shipper's own certifications (e.g., SQF, ISO 9001).",
+          "items": { "type": "string" }
+        },
+        "requiresNDA": {
+          "type": "boolean"
+        },
+        "insuranceLimitPerShipmentCAD": {
+          "type": "number",
+          "description": "Default expectation for liability coverage."
+        },
+        "riskNotes": {
+          "type": "string",
+          "description": "Freeform notes about credit risk, operational risk, or sensitivities."
+        }
+      }
+    },
+    "preferences": {
+      "type": "object",
+      "description": "Operational and commercial preferences.",
+      "properties": {
+        "carrierPreferences": {
+          "type": "string",
+          "description": "Any preferred or restricted carriers."
+        },
+        "equipmentPreferences": {
+          "type": "string",
+          "description": "Equipment types preferred or required (e.g., dry van, reefer, tailgate)."
+        },
+        "accessorialSensitivity": {
+          "type": "string",
+          "description": "How sensitive the shipper is to detention, layover, tailgate, etc."
+        }
+      }
+    },
+    "internalNotes": {
+      "type": "string",
+      "description": "Internal comments for Wills about fit, red flags, or strategic value."
+    }
+  },
+  "required": ["company", "primaryContact", "serviceNeeds"]
+}
