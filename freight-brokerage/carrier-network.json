@@ -1,0 +1,226 @@
+[
+  {
+    "id": "CARRIER-NATL-LTL-01",
+    "name": "Preferred National LTL Partner",
+    "modes": ["Road"],
+    "serviceTypes": ["LTL"],
+    "equipmentTypes": ["Dry Van"],
+    "serviceRegions": [
+      "Canada-Wide"
+    ],
+    "primaryLanes": [
+      {
+        "originRegion": "Eastern Ontario",
+        "destinationRegion": "GTA / Southwestern Ontario",
+        "laneType": "Domestic-ON"
+      },
+      {
+        "originRegion": "Eastern Ontario",
+        "destinationRegion": "Quebec",
+        "laneType": "Domestic-QC"
+      }
+    ],
+    "supportsIndustries": [
+      "Retail",
+      "Manufacturing",
+      "Food & Beverage"
+    ],
+    "crossBorder": {
+      "us": true,
+      "mexico": false
+    },
+    "priority": "Primary",
+    "notes": "Primary LTL carrier for palletized freight. Replace with real carrier name when ready."
+  },
+  {
+    "id": "CARRIER-REG-ON-01",
+    "name": "Regional Eastern Ontario Carrier",
+    "modes": ["Road"],
+    "serviceTypes": ["LTL", "Volume-LTL"],
+    "equipmentTypes": ["Dry Van", "Liftgate"],
+    "serviceRegions": [
+      "Eastern Ontario",
+      "Ottawa Valley",
+      "Montreal Corridor"
+    ],
+    "primaryLanes": [
+      {
+        "originRegion": "Brockville / Smiths Falls / Perth",
+        "destinationRegion": "Ottawa / Gatineau",
+        "laneType": "Regional"
+      }
+    ],
+    "supportsIndustries": [
+      "Retail",
+      "E-commerce",
+      "General Goods"
+    ],
+    "crossBorder": {
+      "us": false,
+      "mexico": false
+    },
+    "priority": "Primary",
+    "notes": "Regional partner for frequent runs between Wills sites and Ottawa region."
+  },
+  {
+    "id": "CARRIER-REEFER-01",
+    "name": "Temperature-Controlled Carrier",
+    "modes": ["Road"],
+    "serviceTypes": ["FTL", "LTL"],
+    "equipmentTypes": ["Reefer"],
+    "serviceRegions": [
+      "Ontario",
+      "Quebec",
+      "US Northeast"
+    ],
+    "primaryLanes": [
+      {
+        "originRegion": "Ingleside / Smiths Falls / Ottawa",
+        "destinationRegion": "Ontario & Quebec DCs",
+        "laneType": "Reefer-Domestic"
+      },
+      {
+        "originRegion": "Eastern Ontario",
+        "destinationRegion": "US Northeast",
+        "laneType": "Reefer-CrossBorder"
+      }
+    ],
+    "supportsIndustries": [
+      "Food & Beverage",
+      "Pharma"
+    ],
+    "crossBorder": {
+      "us": true,
+      "mexico": false
+    },
+    "priority": "Preferred",
+    "notes": "Used for temperature-sensitive product flows. Replace with real carrier name."
+  },
+  {
+    "id": "CARRIER-FLATBED-01",
+    "name": "Flatbed & Specialized Carrier",
+    "modes": ["Road"],
+    "serviceTypes": ["FTL"],
+    "equipmentTypes": ["Flatbed", "Step Deck", "Roll-Tite"],
+    "serviceRegions": [
+      "Ontario",
+      "Quebec",
+      "US Northeast",
+      "US Midwest"
+    ],
+    "primaryLanes": [
+      {
+        "originRegion": "Perth / Brockville / Smiths Falls",
+        "destinationRegion": "Customer Plants & Job Sites",
+        "laneType": "Project / Industrial"
+      }
+    ],
+    "supportsIndustries": [
+      "Industrial",
+      "Construction",
+      "Manufacturing"
+    ],
+    "crossBorder": {
+      "us": true,
+      "mexico": false
+    },
+    "priority": "Preferred",
+    "notes": "Used for oversized or non-palletized freight. Placeholder until real carrier is mapped."
+  },
+  {
+    "id": "CARRIER-PARCEL-01",
+    "name": "Parcel / Courier Partner",
+    "modes": ["Road", "Air"],
+    "serviceTypes": ["Parcel"],
+    "equipmentTypes": ["Parcel Network"],
+    "serviceRegions": [
+      "Canada-Wide",
+      "US",
+      "International"
+    ],
+    "primaryLanes": [
+      {
+        "originRegion": "Fulfillment Sites (Brockville / Ottawa)",
+        "destinationRegion": "Consumer Doorstep",
+        "laneType": "Parcel-Ecomm"
+      }
+    ],
+    "supportsIndustries": [
+      "E-commerce",
+      "Retail",
+      "Subscription Services"
+    ],
+    "crossBorder": {
+      "us": true,
+      "mexico": false
+    },
+    "priority": "Primary",
+    "notes": "Primary parcel carrier for e-commerce and small-parcel flows."
+  },
+  {
+    "id": "CARRIER-US-CROSSBORDER-01",
+    "name": "Cross-Border FTL Partner (US)",
+    "modes": ["Road"],
+    "serviceTypes": ["FTL"],
+    "equipmentTypes": ["Dry Van", "Reefer"],
+    "serviceRegions": [
+      "Ontario",
+      "Quebec",
+      "US Northeast",
+      "US Midwest"
+    ],
+    "primaryLanes": [
+      {
+        "originRegion": "Eastern Ontario",
+        "destinationRegion": "US Northeast",
+        "laneType": "CrossBorder-FTL"
+      },
+      {
+        "originRegion": "Eastern Ontario",
+        "destinationRegion": "US Midwest",
+        "laneType": "CrossBorder-FTL"
+      }
+    ],
+    "supportsIndustries": [
+      "Manufacturing",
+      "Food & Beverage",
+      "Retail"
+    ],
+    "crossBorder": {
+      "us": true,
+      "mexico": false
+    },
+    "priority": "Primary",
+    "notes": "Main FTL partner for US-bound freight. Replace ID with live carrier when finalized."
+  },
+  {
+    "id": "CARRIER-INTERMODAL-01",
+    "name": "Intermodal / Rail Partner",
+    "modes": ["Rail", "Road"],
+    "serviceTypes": ["Intermodal"],
+    "equipmentTypes": ["Container", "Dry Van (drayage)"],
+    "serviceRegions": [
+      "Canada-Wide",
+      "US",
+      "Port Gateways"
+    ],
+    "primaryLanes": [
+      {
+        "originRegion": "CPKC / Rail-Linked Sites",
+        "destinationRegion": "Inland Terminals & Ports",
+        "laneType": "Intermodal"
+      }
+    ],
+    "supportsIndustries": [
+      "Pulp & Paper",
+      "Industrial",
+      "Import / Export"
+    ],
+    "crossBorder": {
+      "us": true,
+      "mexico": true
+    },
+    "priority": "Strategic",
+    "notes": "Used for rail-connected and intermodal flows tied to transload operations."
+  }
+]
