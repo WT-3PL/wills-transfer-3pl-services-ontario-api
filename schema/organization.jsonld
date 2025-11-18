@@ -3,6 +3,7 @@
   "@type": "Organization",
   "@id": "https://www.willstransfer.com/#organization",
   "name": "Wills Transfer Limited",
+  "description": "A Canadian 3PL providing warehousing, fulfillment, transportation, freight brokerage, and logistics services across Eastern Ontario.",
   "url": "https://www.willstransfer.com",
   "logo": "https://www.willstransfer.com/wp-content/uploads/2022/03/wills-transfer-logo.svg",
   "sameAs": [
