@@ -1,1 +1,70 @@
+{
+  "$id": "https://willstransfer.com/schema/facility.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Facility",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Stable internal ID, e.g. PERTH-01"
+    },
+    "name": {
+      "type": "string",
+      "description": "Public facility name"
+    },
+    "address": {
+      "type": "string",
+      "description": "Street address"
+    },
+    "city": {
+      "type": "string"
+    },
+    "province": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string",
+      "default": "Canada"
+    },
+    "postalCode": {
+      "type": "string"
+    },
+    "totalSqFt": {
+      "type": "number",
+      "description": "Approximate total building area in square feet"
+    },
+    "usableSqFt": {
+      "type": "number",
+      "description": "Usable warehouse area in square feet"
+    },
+    "palletPositions": {
+      "type": "integer",
+      "description": "Approximate pallet capacity"
+    },
+    "temperatureZones": {
+      "type": "array",
+      "items": {
+        "$ref": "temperature-zone.json"
+      }
+    },
+    "railCapability": {
+      "$ref": "rail-capability.json"
+    },
+    "certifications": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "description": "Certification ID, e.g. SQF-FOOD, BONDED-10"
+      }
+    },
+    "servicesOffered": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "description": "Service IDs from service.json"
+      }
+    }
+  },
+  "required": ["id", "name", "city", "province", "country", "totalSqFt", "palletPositions"]
+}
 
