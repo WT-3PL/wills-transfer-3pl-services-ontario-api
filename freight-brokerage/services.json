@@ -189,4 +189,33 @@
     ],
     "pricingModel": "fee-based or gainshare model"
   }
+  {
+  "id": "FREIGHT-BROKERAGE",
+  "name": "Freight Brokerage",
+  "category": "Transportation",
+  "description": "Mode-neutral brokerage for LTL, TL, and rail-supported movements in and out of Eastern Ontario.",
+  "typicalUseCases": [
+    "Inbound TL/LTL to Wills warehouses",
+    "Outbound distribution from Brockville, Ottawa, Perth, Smiths Falls",
+    "Rail-supported pulp and industrial freight"
+  ],
+  "industriesServed": [
+    "Manufacturing",
+    "Retail",
+    "E-commerce",
+    "Forestry"
+  ],
+  "relatedServices": [
+    "LOGISTICS",
+    "DISTRIBUTION"
+  ],
+
+  "relatedCarriers": [
+    "CARRIER-LTL-ONTARIO",
+    "CARRIER-TL-NATIONAL",
+    "CARRIER-RAIL-CPKC"
+  ],
+  "usesCarrierNetwork": true,
+  "pricingModel": "lane-based or spot-quote"
+}
 ]
