@@ -1,1 +1,45 @@
+{
+  "$id": "https://willstransfer.com/schema/service.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Service",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Stable ID, e.g. STORAGE-PALLET"
+    },
+    "name": {
+      "type": "string",
+      "description": "Public-facing name of the service"
+    },
+    "category": {
+      "type": "string",
+      "description": "High-level bucket",
+      "enum": ["Storage", "Handling", "Inventory Management", "Transportation", "Brokerage", "VAS", "Fulfillment", "Admin", "Compliance", "Other"]
+    },
+    "description": {
+      "type": "string"
+    },
+    "typicalUseCases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "industriesServed": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "relatedServices": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "description": "IDs of related services"
+      }
+    }
+  },
+  "required": ["id", "name", "category", "description"]
+}
 
