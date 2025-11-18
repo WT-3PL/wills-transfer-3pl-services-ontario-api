@@ -1,0 +1,191 @@
+[
+  {
+    "id": "BROCKVILLE-PARKEDALE",
+    "name": "Brockville Distribution Centre (Parkedale)",
+    "address": "2210 Parkedale Avenue",
+    "city": "Brockville",
+    "province": "ON",
+    "country": "CA",
+    "postalCode": "K6V 5V2",
+    "totalSqFt": 220000,
+    "usableSqFt": 220000,
+    "palletPositions": 8000,
+    "palletRacked": 4000,
+    "palletBulk": 4000,
+    "temperatureZones": [
+      { "label": "Ambient" },
+      { "label": "Cold" }
+    ],
+    "railCapability": {
+      "railServed": true
+    },
+    "certifications": [
+      "GOV-SECRET-CLEARED",
+      "SENSITIVE-DATA-STORAGE"
+    ],
+    "servicesOffered": [],
+    "notes": "Ambient and cold storage. Rail siding on-site."
+  },
+  {
+    "id": "BROCKVILLE-CENTRAL",
+    "name": "Brockville Central Warehouse",
+    "address": "100 Central Avenue East",
+    "city": "Brockville",
+    "province": "ON",
+    "country": "CA",
+    "postalCode": "K6V 4N6",
+    "totalSqFt": 200000,
+    "usableSqFt": 200000,
+    "palletPositions": 7000,
+    "palletRacked": 1000,
+    "palletBulk": 6000,
+    "temperatureZones": [
+      { "label": "Ambient" }
+    ],
+    "railCapability": {
+      "railServed": false
+    },
+    "certifications": [
+      "GOV-SECRET-CLEARED",
+      "SENSITIVE-DATA-STORAGE"
+    ],
+    "servicesOffered": [],
+    "notes": "Ambient storage."
+  },
+  {
+    "id": "INGLESIDE-01",
+    "name": "Ingleside Warehouse",
+    "address": "2 Industrial Avenue",
+    "city": "Ingleside",
+    "province": "ON",
+    "country": "CA",
+    "postalCode": "K6H 6B5",
+    "totalSqFt": 155000,
+    "usableSqFt": 155000,
+    "palletPositions": 7000,
+    "palletRacked": 4000,
+    "palletBulk": 3000,
+    "temperatureZones": [
+      { "label": "Ambient" }
+    ],
+    "railCapability": {
+      "railServed": false
+    },
+    "certifications": [
+      "SQF-CERTIFIED",
+      "GOV-SECRET-CLEARED",
+      "SENSITIVE-DATA-STORAGE"
+    ],
+    "servicesOffered": [],
+    "notes": "Ambient storage. SQF-certified site."
+  },
+  {
+    "id": "OTTAWA-EAST",
+    "name": "Ottawa Main Warehouse (East – Swansea)",
+    "address": "3100 Swansea Crescent",
+    "city": "Ottawa",
+    "province": "ON",
+    "country": "CA",
+    "postalCode": "K1G 3W4",
+    "totalSqFt": 175000,
+    "usableSqFt": 175000,
+    "palletPositions": 8500,
+    "palletRacked": 3500,
+    "palletBulk": 5000,
+    "temperatureZones": [
+      { "label": "Ambient" }
+    ],
+    "railCapability": {
+      "railServed": false
+    },
+    "certifications": [
+      "SQF-CERTIFIED",
+      "GOV-SECRET-CLEARED",
+      "SENSITIVE-DATA-STORAGE"
+    ],
+    "servicesOffered": [],
+    "notes": "Ambient storage. SQF-certified site."
+  },
+  {
+    "id": "OTTAWA-WEST",
+    "name": "Ottawa Warehouse (Stittsville – West)",
+    "address": "145 Iber Road",
+    "city": "Stittsville",
+    "province": "ON",
+    "country": "CA",
+    "postalCode": "K2S 1E7",
+    "totalSqFt": 40000,
+    "usableSqFt": 40000,
+    "palletPositions": 1000,
+    "palletRacked": 1000,
+    "palletBulk": 0,
+    "temperatureZones": [
+      { "label": "Ambient" }
+    ],
+    "railCapability": {
+      "railServed": false
+    },
+    "certifications": [
+      "GMP-CERTIFIED",
+      "GOV-SECRET-CLEARED",
+      "SENSITIVE-DATA-STORAGE"
+    ],
+    "servicesOffered": [],
+    "notes": "Ambient storage. GMP-certified."
+  },
+  {
+    "id": "PERTH-01",
+    "name": "Perth Warehouse",
+    "address": "10 Industrial Road",
+    "city": "Perth",
+    "province": "ON",
+    "country": "CA",
+    "postalCode": "K7H 3P2",
+    "totalSqFt": 130000,
+    "usableSqFt": 130000,
+    "palletPositions": 6500,
+    "palletRacked": 3500,
+    "palletBulk": 3000,
+    "temperatureZones": [
+      { "label": "Ambient" }
+    ],
+    "railCapability": {
+      "railServed": true
+    },
+    "certifications": [
+      "BONDED",
+      "GOV-SECRET-CLEARED",
+      "SENSITIVE-DATA-STORAGE"
+    ],
+    "servicesOffered": [],
+    "notes": "Ambient storage. Bonded and rail capable."
+  },
+  {
+    "id": "SMITHS-01",
+    "name": "Smiths Falls Warehouse",
+    "address": "146 Lombard Street",
+    "city": "Smiths Falls",
+    "province": "ON",
+    "country": "CA",
+    "postalCode": "K7A 3K8",
+    "totalSqFt": 50000,
+    "usableSqFt": 50000,
+    "palletPositions": 4000,
+    "palletRacked": 2000,
+    "palletBulk": 2000,
+    "temperatureZones": [
+      { "label": "Ambient" },
+      { "label": "Cold" }
+    ],
+    "railCapability": {
+      "railServed": true
+    },
+    "certifications": [
+      "SQF-CERTIFIED",
+      "GOV-SECRET-CLEARED",
+      "SENSITIVE-DATA-STORAGE"
+    ],
+    "servicesOffered": [],
+    "notes": "Ambient and cold storage. Rail capable. SQF-certified."
+  }
+]
