@@ -1,1 +1,35 @@
+{
+  "$id": "https://willstransfer.com/schema/rail-capability.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RailCapability",
+  "type": "object",
+  "properties": {
+    "railServed": {
+      "type": "boolean",
+      "description": "True if the site is rail-served directly or via nearby transload"
+    },
+    "railPartner": {
+      "type": "string",
+      "description": "Primary rail partner, e.g. CPKC"
+    },
+    "approxDistanceToRailKm": {
+      "type": "number",
+      "description": "Approximate distance from warehouse to rail access in km"
+    },
+    "carTypesHandled": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "description": "e.g. Boxcar, Hopper, Tank"
+      }
+    },
+    "dailySpotCapacity": {
+      "type": "integer",
+      "description": "Typical number of railcars that can be handled per day"
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}
 
