@@ -1,1 +1,149 @@
+[
+  {
+    "id": "DISTRIBUTION",
+    "name": "Distribution",
+    "category": "Handling",
+    "description": "Efficient distribution services designed to streamline the supply chain, including cross-docking, container de-stuffing, vendor-managed inventory, and optimized outbound flow management.",
+    "typicalUseCases": [
+      "Rapid distribution for retail chains",
+      "Efficient handling of imported goods",
+      "Streamlined inventory management for suppliers",
+      "DC bypass programs",
+      "Case and pallet-level redistribution"
+    ],
+    "industriesServed": [
+      "Retail",
+      "E-commerce",
+      "Manufacturing",
+      "Food",
+      "Pharmaceuticals"
+    ],
+    "relatedServices": [
+      "CROSS-DOCKING",
+      "CONTAINER-DE-STUFFING",
+      "VENDOR-MANAGED-INVENTORY",
+      "INVENTORY-MANAGEMENT",
+      "RECEIVING",
+      "SHIPPING"
+    ],
+    "features": [
+      "Cross-docking",
+      "Container de-stuffing",
+      "Vendor-managed inventory (VMI)",
+      "Advanced WMS visibility",
+      "Batch processing",
+      "Real-time tracking"
+    ],
+    "locationsServed": [
+      "Brockville",
+      "Ottawa",
+      "Perth",
+      "Smiths Falls",
+      "Ingleside"
+    ],
+    "pricingModel": "per-order or per-shipment"
+  },
+  {
+    "id": "CROSS-DOCKING",
+    "name": "Cross-Docking",
+    "category": "Handling",
+    "description": "Immediate transfer of freight between inbound and outbound trucks with minimal or no storage time.",
+    "typicalUseCases": [
+      "Retail DC bypass",
+      "High-velocity shipping lanes",
+      "Pallet consolidation",
+      "Case transfer operations"
+    ],
+    "industriesServed": [
+      "Retail",
+      "E-commerce",
+      "Manufacturing",
+      "Transportation"
+    ],
+    "relatedServices": [
+      "RECEIVING",
+      "SHIPPING",
+      "DISTRIBUTION"
+    ],
+    "features": [
+      "Rapid inbound-to-outbound transfer",
+      "Load consolidation",
+      "Staging and sequencing",
+      "Minimal dwell time"
+    ],
+    "locationsServed": [
+      "Brockville",
+      "Ottawa",
+      "Smiths Falls",
+      "Perth"
+    ],
+    "pricingModel": "per-transfer or hourly"
+  },
+  {
+    "id": "CONTAINER-DE-STUFFING",
+    "name": "Container De-Stuffing",
+    "category": "Handling",
+    "description": "Full and partial unloading of ocean containers or trailers, with sorting, palletizing, inspection, and putaway.",
+    "typicalUseCases": [
+      "Import handling",
+      "Retail replenishment",
+      "Mixed-SKU inbound loads",
+      "Palletizing loose cargo"
+    ],
+    "industriesServed": [
+      "Retail",
+      "E-commerce",
+      "Manufacturing"
+    ],
+    "relatedServices": [
+      "CROSS-DOCKING",
+      "DISTRIBUTION",
+      "RECEIVING"
+    ],
+    "features": [
+      "Loose cargo handling",
+      "Sorting and palletizing",
+      "Inspection and documentation"
+    ],
+    "locationsServed": [
+      "Brockville",
+      "Ottawa"
+    ],
+    "pricingModel": "per-container or hourly"
+  },
+  {
+    "id": "VENDOR-MANAGED-INVENTORY",
+    "name": "Vendor-Managed Inventory (VMI)",
+    "category": "Inventory Management",
+    "description": "Customer-managed replenishment supported by Wills’ systems, space, and handling to maintain optimal inventory flow.",
+    "typicalUseCases": [
+      "Retail vendor replenishment",
+      "Manufacturing supply programs",
+      "Lean supply chain operations"
+    ],
+    "industriesServed": [
+      "Retail",
+      "Manufacturing",
+      "E-commerce"
+    ],
+    "relatedServices": [
+      "INVENTORY-MANAGEMENT",
+      "DISTRIBUTION",
+      "RECEIVING",
+      "SHIPPING"
+    ],
+    "features": [
+      "On-site or remote VMI",
+      "Real-time stock levels",
+      "Outbound order triggers",
+      "Supplier collaboration tools"
+    ],
+    "locationsServed": [
+      "Brockville",
+      "Perth",
+      "Ottawa"
+    ],
+    "pricingModel": "subscription or activity-based"
+  }
+]
 
