@@ -1,1 +1,32 @@
+{
+  "$id": "https://willstransfer.com/schema/location.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Location",
+  "type": "object",
+  "properties": {
+    "code": {
+      "type": "string",
+      "description": "Short code, e.g. PERTH, BROCKVILLE"
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable location name"
+    },
+    "city": {
+      "type": "string"
+    },
+    "province": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string",
+      "default": "Canada"
+    },
+    "region": {
+      "type": "string",
+      "description": "Broader service region, e.g. Eastern Ontario, Ottawa Valley"
+    }
+  },
+  "required": ["code", "name", "city", "province", "country"]
+}
 
