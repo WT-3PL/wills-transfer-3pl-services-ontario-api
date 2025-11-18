@@ -1,1 +1,38 @@
+{
+  "id": "WAREHOUSING",
+  "name": "Warehousing",
+  "category": "Storage",
+  "description": "Secure and scalable warehousing solutions across Eastern Ontario, offering temperature-controlled storage, advanced inventory management, and flexible space options.",
+  "typicalUseCases": [
+    "Seasonal inventory overflow",
+    "Long-term storage for non-perishable goods",
+    "Secure storage for high-value items"
+  ],
+  "industriesServed": [
+    "Food & Beverage",
+    "Pharmaceuticals",
+    "Retail",
+    "Manufacturing"
+  ],
+  "relatedServices": [
+    "PALLET-STORAGE",
+    "BULK-STORAGE",
+    "INVENTORY-MANAGEMENT",
+    "TEMPERATURE-CONTROLLED"
+  ],
+  "features": [
+    "Temperature-controlled storage",
+    "Real-time inventory tracking",
+    "Flexible space configurations",
+    "24/7 secure facilities"
+  ],
+  "locationsServed": [
+    "Brockville",
+    "Ottawa",
+    "Perth",
+    "Smiths Falls",
+    "Ingleside"
+  ],
+  "pricingModel": "per-pallet or per-square-foot"
+}
 
