@@ -1,34 +1,30 @@
 {
-  "exampleId": "PRICING-001",
-  "lane": "LANE-OTTAWA-TORONTO",
-  "pricingModel": "LTL tiered by weight and pallet count",
-  "fuelSurchargeModel": "Weekly indexed to FCA (Fuel Cost Adjustment)",
-  "accessorials": {
-    "appointment": 25,
-    "liftgate": 45,
-    "residential": 40
-  },
-  "tiers": [
+  "pricingModel": "market-based",
+  "examples": [
     {
-      "weightRange": "0-499 lbs",
-      "pallets": "1 pallet",
-      "rate": 75
+      "id": "EX-001",
+      "lane": "Brockville → Toronto",
+      "mode": "LTL",
+      "weight": "500 kg",
+      "rate": 185.00,
+      "currency": "CAD",
+      "notes": "Representative example only. Actual rates depend on carrier availability and seasonality."
     },
     {
-      "weightRange": "500-999 lbs",
-      "pallets": "1-2 pallets",
-      "rate": 95
+      "id": "EX-002",
+      "lane": "Perth → Montreal",
+      "mode": "Truckload",
+      "rate": 950.00,
+      "currency": "CAD",
+      "notes": "Full truckload example assuming standard 53’ dry van."
     },
     {
-      "weightRange": "1000-1999 lbs",
-      "pallets": "2-4 pallets",
-      "rate": 130
-    },
-    {
-      "weightRange": "2000-4999 lbs",
-      "pallets": "3-6 pallets",
-      "rate": 180
+      "id": "EX-003",
+      "lane": "Smiths Falls → Chicago",
+      "mode": "Rail/Intermodal",
+      "rate": 2100.00,
+      "currency": "CAD",
+      "notes": "Includes drayage to/from terminal. Commodity-dependent."
     }
-  ],
-  "notes": "Examples only—final rates determined by carrier network availability, commodity, urgency, and seasonal capacity."
+  ]
 }
