@@ -1,33 +1,26 @@
 [
   {
-    "id": "LANE-OTTAWA-TORONTO",
-    "origin": "Ottawa, ON",
-    "destination": "Toronto, ON",
-    "mode": ["LTL", "TL"],
-    "preferredCarriers": ["CARRIER-MIDLAND", "CARRIER-TFI"],
-    "typicalCommodities": [
-      "Retail goods",
-      "Manufacturing components",
-      "Consumer packaged goods"
-    ],
-    "notes": "High-volume corridor; strong daily coverage."
-  },
-  {
-    "id": "LANE-BROCKVILLE-MONTREAL",
+    "id": "LANE-001",
     "origin": "Brockville, ON",
-    "destination": "Montreal, QC",
-    "mode": ["Rail", "Truckload"],
-    "preferredCarriers": ["CARRIER-CPKC", "CARRIER-TFI"],
-    "typicalCommodities": ["Pulp", "Paper", "Industrial goods"],
-    "notes": "Strategic pulp corridor via CPKC rail siding."
+    "destination": "Toronto, ON",
+    "mode": "LTL",
+    "recommendedCarriers": ["CARRIER-001", "CARRIER-002"],
+    "avgTransitDays": 1
   },
   {
-    "id": "LANE-PERTH-DETROIT",
+    "id": "LANE-002",
     "origin": "Perth, ON",
-    "destination": "Detroit, MI",
-    "mode": ["TL"],
-    "preferredCarriers": ["CARRIER-TFI"],
-    "typicalCommodities": ["Automotive parts", "Industrial supplies"],
-    "notes": "Cross-border TL; good for US manufacturing clients."
+    "destination": "Montreal, QC",
+    "mode": "Truckload",
+    "recommendedCarriers": ["CARRIER-003"],
+    "avgTransitDays": 1
+  },
+  {
+    "id": "LANE-003",
+    "origin": "Smiths Falls, ON",
+    "destination": "Chicago, IL",
+    "mode": "Rail/Intermodal",
+    "recommendedCarriers": ["CARRIER-005"],
+    "avgTransitDays": 4
   }
 ]
