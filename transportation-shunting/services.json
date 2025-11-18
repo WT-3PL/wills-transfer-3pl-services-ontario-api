@@ -1,35 +1,168 @@
-{
-  "id": "LOGISTICS",
-  "name": "Logistics",
-  "category": "Transportation",
-  "description": "Integrated 3PL, shunting, transportation management, and real-time tracking services.",
-  "typicalUseCases": [
-    "Full supply chain management",
-    "Shunting between facilities",
-    "Carrier coordination for timely deliveries"
-  ],
-  "industriesServed": [
-    "Manufacturing",
-    "Retail",
-    "E-commerce"
-  ],
-  "relatedServices": [
-    "SHUNTING",
-    "3PL-WAREHOUSING",
-    "TRANSPORT-MANAGEMENT"
-  ],
-  "features": [
-    "3PL solutions",
-    "Shunting services",
-    "Transportation management",
-    "Real-time tracking"
-  ],
-  "locationsServed": [
-    "Brockville",
-    "Ottawa",
-    "Perth",
-    "Smiths Falls",
-    "Cornwall"
-  ],
-  "pricingModel": "customized"
-}
+[
+  {
+    "id": "LOGISTICS",
+    "name": "Logistics",
+    "category": "Transportation",
+    "description": "Integrated logistics services including 3PL coordination, shunting, and transportation management across Eastern Ontario.",
+    "typicalUseCases": [
+      "End-to-end supply chain support for manufacturers and distributors",
+      "Coordination of warehouse, shunting, and carrier activities",
+      "Single-provider logistics for regional operations"
+    ],
+    "industriesServed": [
+      "Manufacturing",
+      "Retail",
+      "E-commerce"
+    ],
+    "relatedServices": [
+      "SHUNTING",
+      "LOCAL-TRANSFER",
+      "TRAILER-POOL-MANAGEMENT",
+      "TRANSPORT-MANAGEMENT"
+    ],
+    "features": [
+      "Third-party logistics (3PL) solutions",
+      "Integrated with Wills warehousing network",
+      "Real-time tracking and reporting"
+    ],
+    "locationsServed": [
+      "Brockville",
+      "Ottawa",
+      "Perth",
+      "Smiths Falls",
+      "Ingleside"
+    ],
+    "pricingModel": "customized"
+  },
+  {
+    "id": "SHUNTING",
+    "name": "Shunting Services",
+    "category": "Transportation",
+    "description": "On-site trailer shunting between docks, yards, and nearby facilities using dedicated power units and drivers.",
+    "typicalUseCases": [
+      "Plant-to-plant trailer moves",
+      "Yard repositioning for manufacturing or packaging sites",
+      "Daily on-site trailer spotting and live-load support"
+    ],
+    "industriesServed": [
+      "Manufacturing",
+      "Food & Beverage",
+      "Retail"
+    ],
+    "relatedServices": [
+      "TRAILER-POOL-MANAGEMENT",
+      "LOCAL-TRANSFER",
+      "YARD-MANAGEMENT"
+    ],
+    "features": [
+      "Dedicated or shared-use shunt units",
+      "Flexible scheduling (day shift, night shift, weekends)",
+      "Integration with customer yard rules and safety programs"
+    ],
+    "locationsServed": [
+      "Brockville",
+      "Perth",
+      "Smiths Falls",
+      "Ottawa"
+    ],
+    "pricingModel": "daily rate or hourly rate"
+  },
+  {
+    "id": "LOCAL-TRANSFER",
+    "name": "Local Transfer & Shuttle",
+    "category": "Transportation",
+    "description": "Short-haul, local transfer of trailers or freight between nearby customer locations and Wills facilities.",
+    "typicalUseCases": [
+      "Plant-to-warehouse shuttle runs",
+      "Warehouse-to-customer local deliveries",
+      "Short-radius trailer repositioning"
+    ],
+    "industriesServed": [
+      "Manufacturing",
+      "Retail",
+      "E-commerce"
+    ],
+    "relatedServices": [
+      "SHUNTING",
+      "TRAILER-POOL-MANAGEMENT",
+      "LOGISTICS"
+    ],
+    "features": [
+      "Local-radius coverage",
+      "Flexible scheduling based on production cycles",
+      "Coordinated with warehouse receiving and shipping windows"
+    ],
+    "locationsServed": [
+      "Brockville",
+      "Perth",
+      "Smiths Falls",
+      "Ottawa"
+    ],
+    "pricingModel": "per-move or route-based"
+  },
+  {
+    "id": "TRAILER-POOL-MANAGEMENT",
+    "name": "Trailer Pool Management",
+    "category": "Transportation",
+    "description": "Management of customer or carrier trailer pools across Wills and customer sites including inventory, positioning, and utilization tracking.",
+    "typicalUseCases": [
+      "Managing shared trailer fleets between plants and warehouses",
+      "Ensuring the right number of empties and loaded trailers at each site",
+      "Reducing detention and demurrage charges"
+    ],
+    "industriesServed": [
+      "Manufacturing",
+      "Retail",
+      "Logistics Providers"
+    ],
+    "relatedServices": [
+      "SHUNTING",
+      "LOCAL-TRANSFER",
+      "YARD-MANAGEMENT"
+    ],
+    "features": [
+      "Trailer inventory visibility",
+      "Utilization tracking",
+      "Exception reporting on dwell times"
+    ],
+    "locationsServed": [
+      "Brockville",
+      "Perth",
+      "Smiths Falls",
+      "Ottawa"
+    ],
+    "pricingModel": "management fee plus activity-based"
+  },
+  {
+    "id": "YARD-MANAGEMENT",
+    "name": "Yard Management Support",
+    "category": "Transportation",
+    "description": "Support for planning and executing yard moves, dock assignments, and trailer flow at customer or Wills-operated sites.",
+    "typicalUseCases": [
+      "High-volume DC yard flow",
+      "Coordinating dock appointments and trailer positions",
+      "Reducing congestion and wait times on-site"
+    ],
+    "industriesServed": [
+      "Retail",
+      "Manufacturing",
+      "Food & Beverage"
+    ],
+    "relatedServices": [
+      "SHUNTING",
+      "TRAILER-POOL-MANAGEMENT"
+    ],
+    "features": [
+      "Yard flow planning",
+      "Integration with WMS and scheduling tools",
+      "Alignment with safety and access control requirements"
+    ],
+    "locationsServed": [
+      "Brockville",
+      "Perth",
+      "Smiths Falls",
+      "Ottawa"
+    ],
+    "pricingModel": "management fee or project-based"
+  }
+]
