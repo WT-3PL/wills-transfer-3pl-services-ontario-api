@@ -1,1 +1,33 @@
+{
+  "$id": "https://willstransfer.com/schema/certification.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Certification",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Internal ID, e.g. SQF-FOOD, BONDED-10"
+    },
+    "name": {
+      "type": "string",
+      "description": "Full certification name"
+    },
+    "issuingBody": {
+      "type": "string",
+      "description": "Organization or regulator that issues the certification"
+    },
+    "description": {
+      "type": "string"
+    },
+    "appliesTo": {
+      "type": "array",
+      "description": "Where this certification applies",
+      "items": {
+        "type": "string",
+        "description": "Facility ID (e.g. PERTH-01) or 'ORG-WIDE'"
+      }
+    }
+  },
+  "required": ["id", "name"]
+}
 
