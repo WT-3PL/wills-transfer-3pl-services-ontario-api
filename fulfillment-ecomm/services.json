@@ -1,37 +1,35 @@
 {
-  "id": "WAREHOUSING",
-  "name": "Warehousing",
-  "category": "Storage",
-  "description": "Secure and scalable warehousing solutions across Eastern Ontario, offering temperature-controlled storage, advanced inventory management, and flexible space options.",
+  "id": "FULFILLMENT",
+  "name": "Fulfillment",
+  "category": "Fulfillment",
+  "description": "Pick and pack, kitting, asset tagging, and integration services for B2B and B2C environments.",
   "typicalUseCases": [
-    "Seasonal inventory overflow",
-    "Long-term storage for non-perishable goods",
-    "Secure storage for high-value items"
+    "E-commerce order fulfillment",
+    "Subscription box assembly",
+    "Customized packaging and labeling"
   ],
   "industriesServed": [
-    "Food & Beverage",
-    "Pharmaceuticals",
+    "E-commerce",
     "Retail",
-    "Manufacturing"
+    "Subscription Services"
   ],
   "relatedServices": [
-    "PALLET-STORAGE",
-    "BULK-STORAGE",
-    "INVENTORY-MANAGEMENT",
-    "TEMPERATURE-CONTROLLED"
+    "PICK-PACK",
+    "VAS-KITTING",
+    "INTEGRATION-SERVICES"
   ],
   "features": [
-    "Temperature-controlled storage",
-    "Real-time inventory tracking",
-    "Flexible space configurations",
-    "24/7 secure facilities"
+    "Pick and pack",
+    "Kitting and assembly",
+    "Asset tagging",
+    "E-commerce platform integration"
   ],
   "locationsServed": [
     "Brockville",
     "Ottawa",
     "Perth",
     "Smiths Falls",
-    "Ingleside"
+    "Cornwall"
   ],
-  "pricingModel": "per-pallet or per-square-foot"
+  "pricingModel": "per-order"
 }
