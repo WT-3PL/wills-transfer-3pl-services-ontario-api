@@ -1,65 +1,33 @@
 [
   {
-    "id": "LANE-GTA-TO-EASTERN-ON",
-    "name": "GTA to Eastern Ontario Warehouses",
-    "mode": "LTL",
-    "originRegion": "GTA",
-    "originPostalPrefix": ["L", "M"],
-    "destinationRegion": "Eastern Ontario",
-    "destinationFacilities": [
-      "BROCKVILLE-PARKEDALE",
-      "BROCKVILLE-CENTRAL",
-      "OTTAWA-EAST",
-      "OTTAWA-WEST",
-      "PERTH-01",
-      "SMITHS-01",
-      "INGLESIDE-01"
+    "id": "LANE-OTTAWA-TORONTO",
+    "origin": "Ottawa, ON",
+    "destination": "Toronto, ON",
+    "mode": ["LTL", "TL"],
+    "preferredCarriers": ["CARRIER-MIDLAND", "CARRIER-TFI"],
+    "typicalCommodities": [
+      "Retail goods",
+      "Manufacturing components",
+      "Consumer packaged goods"
     ],
-    "primaryCarriers": ["CARRIER-LTL-ONTARIO"],
-    "typicalWeightKg": {
-      "min": 500,
-      "max": 12000
-    },
-    "serviceLevels": ["Standard", "Expedited"],
-    "notes": "Core inbound LTL lane feeding Wills warehouses from GTA manufacturers and importers."
+    "notes": "High-volume corridor; strong daily coverage."
   },
   {
-    "id": "LANE-MONTREAL-TO-EASTERN-ON",
-    "name": "Montreal to Eastern Ontario Warehouses",
-    "mode": "TL",
-    "originRegion": "Montreal",
-    "originPostalPrefix": ["H"],
-    "destinationRegion": "Eastern Ontario",
-    "destinationFacilities": [
-      "BROCKVILLE-PARKEDALE",
-      "SMITHS-01",
-      "INGLESIDE-01"
-    ],
-    "primaryCarriers": ["CARRIER-TL-NATIONAL"],
-    "typicalWeightKg": {
-      "min": 10000,
-      "max": 25000
-    },
-    "serviceLevels": ["Standard"],
-    "notes": "Common inbound TL lane for palletized freight heading into Brockville/Smiths/ING."
+    "id": "LANE-BROCKVILLE-MONTREAL",
+    "origin": "Brockville, ON",
+    "destination": "Montreal, QC",
+    "mode": ["Rail", "Truckload"],
+    "preferredCarriers": ["CARRIER-CPKC", "CARRIER-TFI"],
+    "typicalCommodities": ["Pulp", "Paper", "Industrial goods"],
+    "notes": "Strategic pulp corridor via CPKC rail siding."
   },
   {
-    "id": "LANE-RAIL-PULP-TO-BROCKVILLE-SMITHS",
-    "name": "Rail Pulp to Brockville & Smiths Falls",
-    "mode": "Rail+Truck",
-    "originRegion": "US South / Pulp Mills",
-    "originPostalPrefix": [],
-    "destinationRegion": "Eastern Ontario",
-    "destinationFacilities": [
-      "BROCKVILLE-PARKEDALE",
-      "SMITHS-01"
-    ],
-    "primaryCarriers": ["CARRIER-RAIL-CPKC"],
-    "typicalWeightKg": {
-      "min": 25000,
-      "max": 90000
-    },
-    "serviceLevels": ["Standard"],
-    "notes": "Railcar inbound via CPKC with truck dray to Brockville DC and Smiths Falls warehouse."
+    "id": "LANE-PERTH-DETROIT",
+    "origin": "Perth, ON",
+    "destination": "Detroit, MI",
+    "mode": ["TL"],
+    "preferredCarriers": ["CARRIER-TFI"],
+    "typicalCommodities": ["Automotive parts", "Industrial supplies"],
+    "notes": "Cross-border TL; good for US manufacturing clients."
   }
 ]
